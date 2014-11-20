@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>DeveloperBaseWindows81</id>
+    <version>1.0.0</version>
+    <authors>Lloyd Holman</authors>
+    <owners>Lloyd Holman</owners>
+    <description>Developer Base Windows 8.1 BoxStarter NuGet package</description>
+    <tags>Boxstarter</tags>
+  </metadata>
+</package>
