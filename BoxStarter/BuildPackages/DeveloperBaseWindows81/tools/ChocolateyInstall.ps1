@@ -41,8 +41,8 @@ if ($memberStatus -eq 0 -or $memberStatus -eq 2)
 Set-WindowsExplorerOptions -DisableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Set-TaskbarOptions -Size Large
 
-#Install-ChocolateyDesktopLink -TargetFilePath "\\DGLAP02\Boxstarter\Boxstarter HitachiDeveloperBaseWindows8"
-#Install-ChocolateyShortcut -shortcutFilePath "C:\boxstarter.lnk" -targetPath "\\DGLAP02\Boxstarter\Boxstarter.bat" -arguments "HitachiDeveloperBaseWindows8"
+#Install-ChocolateyDesktopLink -TargetFilePath "\\hostname\Boxstarter\Boxstarter DeveloperBaseWindows81"
+#Install-ChocolateyShortcut -shortcutFilePath "C:\boxstarter.lnk" -targetPath "\\hostname\Boxstarter\Boxstarter.bat" -arguments "DeveloperBaseWindows81"
 
 
 cinst fiddler4
@@ -50,7 +50,7 @@ cinst notepadplusplus
 cinst beyondcompare
 
 #We have to specify the -source explicitly here as Chocolatey and BoxStarter don't seem to be honouring their secondary NuGet sources.
-#cinst HitachiConsulting.VisualStudio2012Premium -source "http://r9-fv2z5-vm0/guestAuth/app/nuget/v1/FeedService.svc;http://chocolatey.org/api/v2" -force
+#cinst Consulting.VisualStudio2012Premium -source "http://r9-fv2z5-vm0/guestAuth/app/nuget/v1/FeedService.svc;http://chocolatey.org/api/v2" -force
 
 cinst Microsoft-Hyper-V-All -source windowsFeatures
 cinst IIS-WebServerRole -source windowsfeatures
